@@ -25,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String url = urlEditText.getText().toString();//获取url
                 Intent intent = new Intent(Intent.ACTION_VIEW);//为Intent设置Action
-                Uri uri = Uri.parse(url);//转化为uri
+                Uri uri = Uri.parse(url);//将url转化为uri
                 intent.setData(uri);//为Intent设置data属性
-                startActivity(intent);
+                startActivity(intent);//运行
             }
         });
-}
+    }
 }
 
