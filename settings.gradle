@@ -1,0 +1,2 @@
+include ':app', ':webview'
+rootProject.name='Intent'
